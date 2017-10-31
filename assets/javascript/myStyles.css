@@ -1,0 +1,25 @@
+.bg-instructions { 
+            background-color: #f0dd90; 
+            color: green;
+            height: 200px;
+          }
+.bg-random-num { 
+            background-color: #3cb36c; 
+            color: #000000;
+            height: 150px;
+          }
+.bg-wins-losses { 
+            background-color: #75aadf; 
+            color: #000000;
+            height: 150px;
+          }
+.bg-total-heading {
+            background-color:#1abc9c;
+            color: #ffffff;
+            height: 25px;
+        }
+.bg-running-total {
+            background-color:#1abc9c;
+            color: #ffffff;
+            height: 150px;
+        }

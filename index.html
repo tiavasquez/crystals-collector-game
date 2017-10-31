@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystals Collector</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Added link to css file -->
+  <link href="assets/css/myStyles.css" type="text/css" rel="stylesheet">
+
+  <!-- Added link to javascript file -->
+  <script src="assets/javascript/myScript.js"></script>
+
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h3 class="text-center">Crystals Collector!</h3>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+        <div class="col-lg-6 bg-instructions">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number.
+                You lose the game if your total score goes above the random number.
+            </p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 bg-random-num">
+            <h2 id="random-num-display"></h2>
+        </div>
+        <div class="col-lg-1 bg-wins-losses">
+            <p>Wins:</p>
+            <p id="total-wins-display"></p>
+            <p>Losses:</p>
+            <p id="total-losses-display"></p>
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-lg-5">
+                <button id="crystal1" class="btn btn-default btn-md crystal" value="5"><h1>C 1</h1></button>
+                <button id="crystal2" class="btn btn-default btn-md crystal" value="10"><h1>C 2</h1></button>
+                <button id="crystal3" class="btn btn-default btn-md crystal" value="15"><h1>C 3</h1></button>
+                <button id="crystal4" class="btn btn-default btn-md crystal" value="20"><h1>C 4</h1></button>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 bg-total-heading">
+            <p>Your total score is:</p>
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-lg-3 bg-running-total">
+                <h2 id="running-total"></h2>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
