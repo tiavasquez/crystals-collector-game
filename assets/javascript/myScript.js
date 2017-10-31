@@ -10,14 +10,15 @@
         newGame();
 
         function newGame() {
-            //TO DO: generate random number and display on screen
-            randomNumber = 50;
+            //generate random number between 19 and 120 and display on screen
+            randomNumber = Math.floor(Math.random() * 102) + 19;
             $("#random-num-display").text(randomNumber);
             runningTotal = 0;
             $("#total-wins-display").text(totalWins);
             $("#total-losses-display").text(totalLosses);
             $("#running-total").text(runningTotal);
-            //TO DO: generate random numbers for each crystal, and store in crystal value (do not display on screen)
+            //TO DO: generate random numbers between 1 and 12 for each crystal, and store in crystal value (do not display on screen)
+            //Math.floor(Math.random() * 12) + 1;
         } 
 
         // Add an on click listener to the crystal buttons
